@@ -13,7 +13,7 @@
       <tr>
         <th>S/N</th>
         <th>Fullname</th>
-        <th>Gender</th>
+        <th>Position</th>
         <th>Mobile Phone Number</th>
         <th>Status</th>
       </tr>
@@ -24,8 +24,8 @@
         <tr class='clickable-row' data-href="{% url 'staff-detail' staff.id %}">
           <td>{{ forloop.counter}}</td>
           <td>{{ staff.surname}} {{staff.firstname }} {{staff.other_name }}</td>
-          <td>{{ staff.get_gender_display}}</td>
-          <td>{{ staff.parent_mobile_number}}</td>
+          <td>{{ staff.others}}</td>
+          <td>{{ staff.mobile_number}}</td>
           <td>{{ staff.get_current_status_display}}</td>
         </tr>
       {% endfor %}

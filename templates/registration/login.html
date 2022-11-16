@@ -42,7 +42,8 @@
             <form class="login100-form validate-form" method="post" action="{% url 'login' %}">
                 {% csrf_token %}
                 <span class="login100-form-title">
-                   {{ school_name }}
+                   <!-- {{ school_name }} -->
+                   Lady Bird Junior school
                                 </span>
                 <span class="error-msg"> 
                     {% if form.errors %}
